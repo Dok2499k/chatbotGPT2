@@ -1,0 +1,13 @@
+body {
+background-color: #f8f9fa;
+}
+#chat div {
+padding: 0.5rem;
+border-radius: 0.25rem;
+}
+#chat .text-end {
+background-color: #e2ffc7;
+}
+#chat .text-start {
+background-color: #fff;
+}
