@@ -209,7 +209,7 @@ While the system is functional, several enhancements can be considered:
 
 ---
 
-**Author:** S\
+**Authors:** Doston Kanaev and Saidamir Rustamov\
 **Date:** July 2025\
 **Model Version:** GPT-2 fine-tuned on Cornell + PersonaChat
 
