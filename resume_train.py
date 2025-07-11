@@ -5,7 +5,7 @@ import torch
 train_dataset = load_from_disk("tokenized_combined_dialog_data/train")
 val_dataset = load_from_disk("tokenized_combined_dialog_data/val")
 
-checkpoint_path = "./model_output/checkpoint-100000"
+checkpoint_path = "./model_output/checkpoint-10000"
 model = GPT2LMHeadModel.from_pretrained(checkpoint_path)
 tokenizer = GPT2Tokenizer.from_pretrained("./model_output")
 
@@ -14,8 +14,8 @@ training_args = TrainingArguments(
     output_dir="./model_output",
     overwrite_output_dir=False,
     num_train_epochs=3,
-    per_device_train_batch_size=8,
-    per_device_eval_batch_size=8,
+    per_device_train_batch_size=32,
+    per_device_eval_batch_size=32,
     eval_strategy="steps",
     eval_steps=5000,
     save_steps=10000,
